@@ -15,7 +15,7 @@ Bija badha case ma print thavu joiye: "✅ Deployment Passed!".
 const testResults = ["PASS", "FAIL", "SKIP", "FAIL", "PASS", "PASS"]; */
 
 
-import {test} from '@playwright/test'
+import { test } from '@playwright/test';
 /*
 test ('testresultanalysis', async ()=>
      {
@@ -53,27 +53,29 @@ console.log(Marks.reduce((sum, total)=> sum + total,0))
 */
 
 // find second highest No.
-/*
-test ('Sec high No', async () =>
-{
-    const scores: number[] = [45, 89, 12, 99, 76, 99, 88];
-    const duplicate: number[] = [...new Set(scores)]
-    duplicate.sort((a: number, b: number)=> b-a)
-    const sechighno: number = duplicate[1]
-    console.log(sechighno)
-})
-    */
+
+ test ('Sec high No', async () =>
+ {
+     const scores: number[] = [45, 89, 12, 99, 76, 99, 88];
+//     const duplicate: number[] = [...new Set(scores)]
+//     duplicate.sort((a: number, b: number)=> b-a)
+//     const sechighno: number = duplicate[1]
+     const sechighestno: number = [...new Set(scores)].sort((a: number, b: number)=> b-a)[1]
+     console.log(sechighestno)
+//     console.log(sechighno)
+ });
+    
 
 // function to find highest number in an array 
 
-function findhighestnumber(num: number[]): number {
-    if (num.length === 0) {
-        console.log("Array is empty");
-   }
-   return Math.max(...num);
-}
-const arr = [45, 89, 12, 99, 76, 99, 88];
-console.log(findhighestnumber(arr))
+// function findhighestnumber(num: number[]): number {
+//     if (num.length === 0) {
+//         console.log("Array is empty");
+//    }
+//    return Math.max(...num);
+// }
+// const arr = [45, 89, 12, 99, 76, 99, 88];
+// console.log(findhighestnumber(arr))
 
 
 /*
