@@ -5,11 +5,11 @@ const is a variable declaration keyword which is used to declare a constant vari
 reassigned or re-declared. It must be initialized at the time of declaration. 
 */
 
-/*
-var a = 10, b = 10
-var c = a + b
-console.log(c)
-console.log(typeof(c)) */
+
+// var a = 10, b = 10
+// var c = a + b
+// console.log(c)
+// console.log(typeof(c))
 /*
 c = "brijesh gajera"
 console.log(c) */
